@@ -1,0 +1,21 @@
+// Bootstrap
+@import "../vendors/bootstrap-5.1.3/scss/bootstrap-grid.scss";
+
+// Variables
+@import "./variables/colors";
+@import "./variables/spacing";
+
+// Mixins
+@import "./mixins/flexbox";
+
+// Typoghrapy
+@import "./typography";
+@import "./reset";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/button";
+
+// Pages
+@import "./pages/index";
