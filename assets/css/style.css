@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -2952,7 +2953,8 @@
     display: none !important; } }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif; }
 
 *,
 *::after,
@@ -2966,3 +2968,90 @@ a {
 
 li {
   list-style: none; }
+
+body {
+  height: 5000px; }
+
+header.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+header .navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 12px 20px rgba(55, 55, 54, 0.2); }
+  header .navbar .container-nav {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%; }
+    header .navbar .container-nav .navbar-wrapper {
+      display: flex;
+      align-items: center;
+      height: 6.5rem;
+      width: 100%;
+      z-index: 1; }
+      header .navbar .container-nav .navbar-wrapper .navbar-logo .logo {
+        margin-right: 2rem; }
+      header .navbar .container-nav .navbar-wrapper .nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .navbar .container-nav .navbar-wrapper .nav-list .nav-list-item a {
+          color: #373736;
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin: 0 1.2rem 0 1.2rem; }
+          header .navbar .container-nav .navbar-wrapper .nav-list .nav-list-item a:hover {
+            text-decoration: underline; }
+      header .navbar .container-nav .navbar-wrapper .navbar-right-col {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1; }
+        header .navbar .container-nav .navbar-wrapper .navbar-right-col .flag {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 3rem; }
+          header .navbar .container-nav .navbar-wrapper .navbar-right-col .flag p {
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 500;
+            margin-left: 1.5rem; }
+        header .navbar .container-nav .navbar-wrapper .navbar-right-col .navbar-contact-phone {
+          margin-left: 1rem; }
+        header .navbar .container-nav .navbar-wrapper .navbar-right-col .button {
+          margin-left: 3rem;
+          padding: 0 3rem 0 3rem;
+          box-shadow: 0px 5px 5px rgba(55, 55, 54, 0.2); }
+  header .navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 6.5rem;
+    width: 44.5%;
+    border-bottom-left-radius: 50px;
+    background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%); }
+
+.button {
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0 3rem;
+  color: #dd5839;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2rem;
+  cursor: pointer;
+  background: #ffffff;
+  border: 0.2rem solid #dd5839;
+  border-radius: 0.8rem;
+  margin-left: 3.8rem;
+  text-decoration: none; }
