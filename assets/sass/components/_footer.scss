@@ -4,15 +4,16 @@ footer {
   justify-content: center;
   margin-top: 5.7rem;
   padding: 3.2rem 4rem 1.5rem;
-  background: $color-grey-80;
+  background-color: $color-grey-80;
   box-shadow: 0rem 0.4rem 1rem rgba($color: $color-grey-80, $alpha: 0.2);
   border-radius: 0.8rem 0.8rem 0 0;
+
   .container-footer {
     padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 74%;
+    max-width: 74%;
     flex-direction: column;
     .footer-main {
       display: flex;
@@ -21,7 +22,7 @@ footer {
       width: 100%;
 
       .footer-left {
-        margin-right: 5rem;
+        // margin-right: 5rem;
         .footer-logo {
           display: inline-block;
           margin-bottom: 2.2rem;
