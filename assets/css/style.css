@@ -6745,6 +6745,7 @@ header {
 footer {
   display: flex;
   align-items: center;
+  margin-top: 57px;
   justify-content: center;
   padding: 3.2rem 4rem 1.5rem;
   background-color: #373736;
@@ -7265,6 +7266,8 @@ main {
                   padding: 0;
                   margin: 13px 10px;
                   border: none; }
+                  .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link.active {
+                    color: #f05835; }
             .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content {
               padding: 0 22px 30px; }
               .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li {
@@ -7289,3 +7292,21 @@ main {
                 .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li:hover {
                   color: #212529;
                   background-color: rgba(0, 0, 0, 0.075); }
+  .main-container .home .block .block-body .partner-list {
+    margin-bottom: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .main-container .home .block .block-body .partner-list .partner-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 19%; }
+      .main-container .home .block .block-body .partner-list .partner-item img {
+        max-width: 100%; }

@@ -495,6 +495,7 @@ main {
       }
     }
 
+    // Currency
     .block {
       .block-body {
         .currency-div {
@@ -578,6 +579,10 @@ main {
                           padding: 0;
                           margin: 13px 10px;
                           border: none;
+
+                          &.active {
+                            color: #f05835;
+                          }
                         }
                       }
                     }
@@ -618,6 +623,35 @@ main {
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+
+    // Partners
+    .block {
+      .block-body {
+        .partner-list {
+          margin-bottom: 27px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .partner-item {
+            background: $color-white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 19%;
+
+            img {
+              max-width: 100%;
             }
           }
         }
