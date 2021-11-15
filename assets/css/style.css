@@ -7155,3 +7155,48 @@ main {
         max-width: 100%;
         vertical-align: middle;
         border-style: none; }
+  .main-container .home .block .block-body .news-list {
+    display: flex; }
+    .main-container .home .block .block-body .news-list .row {
+      margin-left: -10px;
+      margin-right: -10px; }
+      .main-container .home .block .block-body .news-list .row .news-card {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none; }
+        .main-container .home .block .block-body .news-list .row .news-card .card {
+          background-color: #fff;
+          border: 1px solid transparent;
+          border-bottom-left-radius: calc(0.5rem - 1px);
+          border-bottom-right-radius: calc(0.5rem - 1px); }
+          .main-container .home .block .block-body .news-list .row .news-card .card .card-img-top {
+            border-top-left-radius: calc(0.5rem - 1px);
+            border-top-right-radius: calc(0.5rem - 1px); }
+          .main-container .home .block .block-body .news-list .row .news-card .card img {
+            width: 100%; }
+          .main-container .home .block .block-body .news-list .row .news-card .card .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 20px;
+            background-color: #fff; }
+            .main-container .home .block .block-body .news-list .row .news-card .card .card-body .card-title {
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 26px;
+              color: #373736;
+              margin-bottom: 20px; }
+            .main-container .home .block .block-body .news-list .row .news-card .card .card-body .card-text {
+              font-size: 15px;
+              line-height: 22px;
+              color: #373736; }
+            .main-container .home .block .block-body .news-list .row .news-card .card .card-body .news-card-date {
+              display: flex;
+              align-items: center; }
+              .main-container .home .block .block-body .news-list .row .news-card .card .card-body .news-card-date img {
+                margin-right: 10px;
+                width: auto; }
+              .main-container .home .block .block-body .news-list .row .news-card .card .card-body .news-card-date span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: normal;
+                color: #9b9b9b; }

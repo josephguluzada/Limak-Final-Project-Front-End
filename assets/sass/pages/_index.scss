@@ -424,5 +424,75 @@ main {
         }
       }
     }
+
+    // News
+    .block {
+      .block-body {
+        .news-list {
+          display: flex;
+          .row {
+            margin-left: -10px;
+            margin-right: -10px;
+
+            .news-card {
+              display: block;
+              margin-bottom: 10px;
+              text-decoration: none;
+
+              .card {
+                background-color: $color-white;
+                border: 1px solid transparent;
+                border-bottom-left-radius: calc(0.5rem - 1px);
+                border-bottom-right-radius: calc(0.5rem - 1px);
+                .card-img-top {
+                  border-top-left-radius: calc(0.5rem - 1px);
+                  border-top-right-radius: calc(0.5rem - 1px);
+                }
+                img {
+                  width: 100%;
+                }
+
+                .card-body {
+                  flex: 1 1 auto;
+                  min-height: 1px;
+                  padding: 20px;
+                  background-color: $color-white;
+
+                  .card-title {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #373736;
+                    margin-bottom: 20px;
+                  }
+
+                  .card-text {
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #373736;
+                  }
+
+                  .news-card-date {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                      margin-right: 10px;
+                      width: auto;
+                    }
+                    span {
+                      font-weight: 500;
+                      font-size: 14px;
+                      line-height: normal;
+                      color: #9b9b9b;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
