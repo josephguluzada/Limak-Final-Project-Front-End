@@ -1,3 +1,7 @@
+main {
+  @include flexbox;
+  flex-direction: column;
+}
 #hero {
   padding: 12rem 0;
   width: 100%;
@@ -46,7 +50,7 @@
         }
         .badge-secondary {
           color: $color-white;
-          background-color: $color-secondary;
+          background-color: #f05835;
         }
 
         .order-input {
@@ -134,8 +138,8 @@
         background-image: url("../../assets/images/rectangle-top.svg");
         background-repeat: no-repeat;
         position: absolute;
-        top: -8px;
-        right: -0.5px;
+        top: -8.5px;
+        right: -0.9px;
       }
     }
 
@@ -320,6 +324,104 @@
 
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+// Main Container
+
+.main-container {
+  max-width: 105rem;
+  .home {
+    .block {
+      .block-header {
+        margin-top: 42px;
+        margin-bottom: 22px;
+        padding-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .block-title {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 27px;
+          color: #373736;
+          flex: 1;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .block-body {
+        .store-list {
+          display: flex;
+          flex-wrap: wrap;
+
+          .row {
+            margin-left: -1rem;
+            margin-right: -1rem;
+
+            .store-item {
+              .card {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1 px solid rgba(0, 0, 0, 0.125);
+                border-radius: 0.25 rem;
+                background: #fff;
+                border-radius: 8px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                height: 156px;
+                box-shadow: none;
+                padding: 55px 25px;
+                @include flexbox;
+
+                img {
+                  width: 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .block-foot {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        .more {
+          margin-left: 20px;
+          border: 2px solid #f46342;
+          box-sizing: border-box;
+          border-radius: 20px;
+          color: #f05835;
+          font-size: 16px;
+          width: 224px;
+          display: flex;
+          justify-content: center;
+          padding: 12px 0;
+
+          span {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+          }
+          img {
+            margin-left: 11px;
+            max-width: 100%;
+            vertical-align: middle;
+            border-style: none;
+          }
+        }
       }
     }
   }
