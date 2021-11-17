@@ -6844,6 +6844,29 @@ footer {
   border-radius: 0.25rem;
   background: #fff;
   border-radius: 8px; }
+  .card .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 45px 64px; }
+    .card .card-body .float-right {
+      float: right !important; }
+    .card .card-body .card-img {
+      width: auto;
+      margin-left: 30px;
+      border-top-left-radius: calc(0.25rem - 1px);
+      border-top-right-radius: calc(0.25rem - 1px);
+      border-bottom-right-radius: calc(0.25rem - 1px);
+      border-bottom-left-radius: calc(0.25rem - 1px); }
+    .card .card-body .card-text {
+      font-size: 13px;
+      line-height: 22px;
+      margin-top: 30px;
+      text-align: justify; }
+      .card .card-body .card-text h5 {
+        font-size: 2rem; }
+
+.mb-20 {
+  margin-bottom: 2rem; }
 
 main {
   display: flex;
@@ -8119,3 +8142,37 @@ main {
 
 .contact .block .block-body .card-contact {
   padding: 13px 0; }
+
+#main .main-container #terms .block .block-body .accordion .accordion-item {
+  border-radius: 1rem !important; }
+  #main .main-container #terms .block .block-body .accordion .accordion-item .accordion-header {
+    padding: 40px 30px; }
+    #main .main-container #terms .block .block-body .accordion .accordion-item .accordion-header .accordion-button {
+      box-shadow: none !important;
+      background-color: transparent;
+      font-weight: 600;
+      font-size: 16px;
+      color: #373736; }
+      #main .main-container #terms .block .block-body .accordion .accordion-item .accordion-header .accordion-button::after {
+        color: transparent; }
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 45px 64px; }
+  .card-body .float-right {
+    float: right !important; }
+  .card-body .card-img {
+    width: auto;
+    margin-left: 30px;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
+    border-bottom-left-radius: calc(0.25rem - 1px); }
+  .card-body .card-text {
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 30px;
+    text-align: justify; }
+    .card-body .card-text h5 {
+      font-size: 2rem; }

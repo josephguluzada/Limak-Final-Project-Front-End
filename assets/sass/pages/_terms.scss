@@ -1,0 +1,31 @@
+#main {
+  .main-container {
+    #terms {
+      .block {
+        .block-body {
+          .accordion {
+            .accordion-item {
+              border-radius: 1rem !important;
+
+              .accordion-header {
+                padding: 40px 30px;
+
+                .accordion-button {
+                  box-shadow: none !important;
+                  background-color: transparent;
+                  font-weight: 600;
+                  font-size: 16px;
+                  color: #373736;
+
+                  &::after {
+                    color: transparent;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
