@@ -6830,6 +6830,21 @@ footer {
   margin-left: 3.8rem;
   text-decoration: none; }
 
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  background: #fff;
+  border-radius: 8px; }
+
 main {
   display: flex;
   justify-content: center;
@@ -8049,3 +8064,58 @@ main {
         margin-bottom: 1.6rem; }
       #main .main-container .privacy .block .block-body .card .card-body .card-text:last-child {
         margin-bottom: 0; }
+
+.contact .block .block-body .card {
+  margin-bottom: 20px; }
+  .contact .block .block-body .card .card-contact-wrapper {
+    position: relative;
+    padding: 12px 25px; }
+    .contact .block .block-body .card .card-contact-wrapper .row .contact-article .contact-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; }
+      .contact .block .block-body .card .card-contact-wrapper .row .contact-article .contact-title img {
+        width: auto;
+        max-width: 100%; }
+      .contact .block .block-body .card .card-contact-wrapper .row .contact-article .contact-title h3 {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 12px; }
+    .contact .block .block-body .card .card-contact-wrapper .row .contact-article .contact-text {
+      font-size: 14px;
+      line-height: 22px;
+      color: #5f5f5e;
+      margin-bottom: 1.6rem; }
+    .contact .block .block-body .card .card-contact-wrapper .row .contact-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; }
+      .contact .block .block-body .card .card-contact-wrapper .row .contact-title img {
+        width: auto;
+        max-width: 100%; }
+      .contact .block .block-body .card .card-contact-wrapper .row .contact-title h3 {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 12px; }
+    .contact .block .block-body .card .card-contact-wrapper .row .contact-title-map {
+      margin-bottom: 1.6rem;
+      text-decoration: underline; }
+    .contact .block .block-body .card .card-contact-wrapper .row .contact-title-call {
+      margin-bottom: 2.5rem; }
+    .contact .block .block-body .card .card-contact-wrapper .row .contact-title-mail {
+      margin-bottom: 2.5rem; }
+    .contact .block .block-body .card .card-contact-wrapper::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 7px;
+      height: 100%;
+      background: #f05835;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px; }
+
+.contact .block .block-body .card-contact {
+  padding: 13px 0; }
