@@ -30,7 +30,7 @@ footer {
         .footer-app {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
           a {
             margin-right: 1.5rem;
           }
@@ -63,6 +63,8 @@ footer {
         }
         .footer-social {
           margin-top: 2.8rem;
+          display: flex;
+          justify-content: flex-end;
           a {
             margin-left: 1.4rem;
           }

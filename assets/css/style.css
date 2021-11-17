@@ -6769,7 +6769,7 @@ footer {
       footer .container-footer .footer-main .footer-left .footer-app {
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: flex-start; }
         footer .container-footer .footer-main .footer-left .footer-app a {
           margin-right: 1.5rem; }
       footer .container-footer .footer-main .footer-navigation-menu {
@@ -6788,7 +6788,9 @@ footer {
         display: block;
         text-align: right; }
       footer .container-footer .footer-main .footer-contact .footer-social {
-        margin-top: 2.8rem; }
+        margin-top: 2.8rem;
+        display: flex;
+        justify-content: flex-end; }
         footer .container-footer .footer-main .footer-contact .footer-social a {
           margin-left: 1.4rem; }
         footer .container-footer .footer-main .footer-contact .footer-social .resized-icon {
@@ -8012,3 +8014,38 @@ main {
                   #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li:hover {
                     color: #212529;
                     background-color: rgba(0, 0, 0, 0.075); }
+
+#main .main-container .privacy .block .block-body .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  background: #fff;
+  border-radius: 8px; }
+  #main .main-container .privacy .block .block-body .card .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 45px 64px 80px; }
+    #main .main-container .privacy .block .block-body .card .card-body .card-text {
+      color: #373736;
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 25px;
+      background: url(../../assets/images/disc-color.svg) no-repeat left 5px;
+      padding-left: 22px;
+      font-weight: 500; }
+      #main .main-container .privacy .block .block-body .card .card-body .card-text h5 {
+        font-size: 2rem; }
+      #main .main-container .privacy .block .block-body .card .card-body .card-text p {
+        margin-top: 0;
+        margin-bottom: 1.6rem; }
+      #main .main-container .privacy .block .block-body .card .card-body .card-text:last-child {
+        margin-bottom: 0; }
