@@ -9,4 +9,16 @@ for (let i = 0; i < accordion.length; i++) {
 
 }
 
+// User Panel Button
+
+const userBtn = document.querySelector(".user-panel-btn");
+const dropDownContent = document.querySelector(".dropdown-menu");
+
+userBtn.addEventListener("click", () => {
+    dropDownContent.classList.toggle("active");
+})
+
+
+
+
 
