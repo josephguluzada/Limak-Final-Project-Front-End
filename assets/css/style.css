@@ -8327,11 +8327,11 @@ header .user-panel-account {
         header .user-panel-account .container-user-panel .btn-group .dropdown-menu.active {
           display: block; }
 
-header .navbar {
+header #userPanel-nav {
   min-width: 114rem !important; }
-  header .navbar::after {
+  header #userPanel-nav::after {
     content: none; }
-  header .navbar .btn {
+  header #userPanel-nav .btn {
     display: inline-block;
     font-weight: 400;
     color: #212529;
@@ -8357,11 +8357,11 @@ header .navbar {
     color: #fff;
     margin-left: 22px;
     margin-left: 30px; }
-  header .navbar .btn-header-danger {
+  header #userPanel-nav .btn-header-danger {
     background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%); }
-  header .navbar .container-nav {
+  header #userPanel-nav .container-nav {
     width: 114rem; }
-    header .navbar .container-nav .navbar-wrapper {
+    header #userPanel-nav .container-nav .navbar-wrapper {
       width: 112rem !important; }
 
 @media (min-width: 1280px) and (max-width: 1600px) {
@@ -8701,3 +8701,132 @@ header .navbar {
           #user-panel .row .aside .card-custom .form-exc .form-exc-body .form-exc-table ul li .currency-container .right-side strong {
             color: black;
             font-weight: bold; }
+
+#user-panel .row .content .content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #user-panel .row .content .content-header .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  #user-panel .row .content .content-header .btn.btn-submit {
+    background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 11px 38px;
+    color: #fff; }
+    #user-panel .row .content .content-header .btn.btn-submit i {
+      font-size: 12px;
+      font-weight: 600; }
+  #user-panel .row .content .content-header .form-package {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #user-panel .row .content .content-header .form-package .custom-select {
+      display: inline-block;
+      width: 100%;
+      height: calc(1.5em + 0.75rem + 2px);
+      padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      vertical-align: middle;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      appearance: none;
+      transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      background-color: #f5f5f7;
+      background-image: url(../../assets/images/caret-down.svg);
+      background-repeat: no-repeat;
+      background-position-x: calc(100% - 15px);
+      background-position-y: center;
+      border: 1px solid #dfdfdf;
+      border-radius: 8px;
+      padding: 10px 15px;
+      width: 100%;
+      height: 40px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 17px;
+      margin-bottom: 20px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      width: auto;
+      min-width: 190px;
+      margin-bottom: 0;
+      outline: none; }
+
+#user-panel .row .row .nav {
+  display: flex; }
+
+#user-panel .row .row .card-tabs-nav {
+  background-color: #fff;
+  padding: 0 18px;
+  border-radius: 8px;
+  overflow: auto;
+  flex-wrap: nowrap; }
+
+#user-panel .row .row .nav-tabs {
+  border-bottom: 1px solid #dee2e6; }
+  #user-panel .row .row .nav-tabs .nav-item {
+    width: 33%; }
+    #user-panel .row .row .nav-tabs .nav-item .nav-link {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 44px 0 0;
+      padding: 18px 0;
+      border: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%; }
+      #user-panel .row .row .nav-tabs .nav-item .nav-link .card-tabs-nav-icon {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        margin-right: 10px; }
+      #user-panel .row .row .nav-tabs .nav-item .nav-link img {
+        max-width: 100%; }
+      #user-panel .row .row .nav-tabs .nav-item .nav-link.active {
+        color: #495057;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff; }
+      #user-panel .row .row .nav-tabs .nav-item .nav-link.active::after {
+        content: "";
+        width: 100%;
+        height: 3.2px;
+        background-color: #f05835;
+        border-radius: 8px 8px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+
+#user-panel .row .row .card-tabs-body {
+  padding: 10px 0; }
+  #user-panel .row .row .card-tabs-body .order-item {
+    margin-bottom: 20px; }
+    #user-panel .row .row .card-tabs-body .order-item .order-item-title {
+      display: flex;
+      justify-content: space-around;
+      padding: 2.4rem !important; }
+      #user-panel .row .row .card-tabs-body .order-item .order-item-title h3 {
+        font-size: 2.7rem;
+        font-weight: 500; }
