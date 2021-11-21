@@ -54,4 +54,19 @@ for (let i = 0; i < flagBtn.length; i++) {
 }
 
 
+// Package Show Button
 
+const showBtn = document.querySelectorAll(".package-table button");
+const collapseDiv = document.querySelectorAll(".collapse");
+
+for (let i = 0; i < showBtn.length; i++) {
+    showBtn[i].addEventListener("click", function () {
+        for (let j = 0; j < showBtn.length; j++) {
+            if (i == j) {
+                collapseDiv[i].classList.toggle("show")
+                console.log(i);
+                console.log(j);
+            }
+        }
+    })
+}
