@@ -37,10 +37,17 @@ document.addEventListener("mouseup", (e) => {
 // User Panel Content Header
 
 const flagBtn = document.querySelectorAll("#headerList .nav-item .nav-link");
+const tabPane = Array.from(document.querySelectorAll(".tab-content .tab-pane"));
 
 function removeActivesInFlag() {
     for (let i = 0; i < flagBtn.length; i++) {
         flagBtn[i].classList.remove("active");
+    }
+}
+
+function removeActivesInTabPane() {
+    for (let i = 0; i < tabPane.length; i++) {
+        tabPane[i].classList.remove("active");
     }
 }
 
@@ -50,6 +57,13 @@ for (let i = 0; i < flagBtn.length; i++) {
             removeActivesInFlag();
             flagBtn[i].classList.add("active")
         }
+        removeActivesInTabPane();
+        let target = this.getAttribute("data-target");
+        tabPane.forEach(el => {
+            if (target == el.getAttribute("data-id")) {
+                el.classList.add("active")
+            }
+        })
     })
 }
 

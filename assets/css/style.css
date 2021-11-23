@@ -10182,109 +10182,178 @@ header #userPanel-nav {
             color: black;
             font-weight: bold; }
 
-#user-panel .row .content .row .tab-content .card .card-header {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  padding: 20px;
-  border-bottom-color: #d5d5d5;
-  background-color: #fff;
-  border-radius: 8px 8px 0 0; }
-  #user-panel .row .content .row .tab-content .card .card-header .custom-list-group {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-left: 0;
+#user-panel .row .content .row .tab-content .tab-pane {
+  display: none; }
+  #user-panel .row .content .row .tab-content .tab-pane .card .card-header {
     margin-bottom: 0;
-    border-radius: 0;
-    border: none; }
-    #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item {
-      border: none;
-      padding: 20px;
-      border-right-width: 0;
-      padding-bottom: 10px;
-      height: auto;
-      display: block !important;
-      border-left: none !important; }
-      #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item h5 {
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        margin-bottom: 10px; }
-      #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item .order-item-copy {
-        display: flex;
-        align-items: center; }
-        #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item .order-item-copy .order-item-value {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 20px;
+    border-bottom-color: #d5d5d5;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0; }
+    #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      border-radius: 0;
+      border: none; }
+      #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item {
+        border: none;
+        padding: 20px;
+        border-right-width: 0;
+        padding-bottom: 10px;
+        height: auto;
+        display: block !important;
+        border-left: none !important; }
+        #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item h5 {
+          font-weight: bold;
+          font-size: 13px;
+          line-height: 16px;
+          margin-bottom: 10px; }
+        #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-copy {
+          display: flex;
+          align-items: center; }
+          #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-copy .order-item-value {
+            font-weight: 500;
+            font-size: 14.5px;
+            line-height: 16px;
+            color: rgba(55, 55, 54, 0.7);
+            margin-bottom: 0; }
+          #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-copy .noselect {
+            user-select: none; }
+          #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-copy .copy .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+          #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-copy .copy .btn-link {
+            font-weight: 400;
+            color: #0d6efd;
+            text-decoration: underline;
+            background: none;
+            border: none;
+            font-size: 13px;
+            line-height: 15px;
+            box-shadow: none; }
+            #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-copy .copy .btn-link i {
+              font-size: 16px;
+              color: #058fff; }
+        #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item p {
+          margin-bottom: 1rem; }
+        #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-label-info {
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px; }
+  #user-panel .row .content .row .tab-content .tab-pane .card .card-footer {
+    padding: 25px 20px;
+    background-color: #fff;
+    border-top: 1px solid #d5d5d5 !important;
+    border-radius: 0 0 8px 8px; }
+    #user-panel .row .content .row .tab-content .tab-pane .card .card-footer .list-group {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 0;
+      border: none; }
+    #user-panel .row .content .row .tab-content .tab-pane .card .card-footer .list-group-horizontal {
+      flex-direction: row; }
+      #user-panel .row .content .row .tab-content .tab-pane .card .card-footer .list-group-horizontal .list-group-item {
+        padding-top: 0;
+        padding: 20px;
+        height: auto;
+        padding-bottom: 30px;
+        flex-basis: 33%;
+        border: none; }
+        #user-panel .row .content .row .tab-content .tab-pane .card .card-footer .list-group-horizontal .list-group-item .order-item-label {
+          font-weight: bold;
+          font-size: 13px;
+          line-height: 16px;
+          margin-bottom: 10px; }
+        #user-panel .row .content .row .tab-content .tab-pane .card .card-footer .list-group-horizontal .list-group-item .order-item-value {
           font-weight: 500;
           font-size: 14.5px;
           line-height: 16px;
           color: rgba(55, 55, 54, 0.7);
           margin-bottom: 0; }
-        #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item .order-item-copy .noselect {
-          user-select: none; }
-        #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item .order-item-copy .copy .btn {
-          display: inline-block;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #212529;
-          text-align: center;
-          text-decoration: none;
-          vertical-align: middle;
-          cursor: pointer;
-          user-select: none;
-          background-color: transparent;
-          border: 1px solid transparent;
-          padding: 0.375rem 0.75rem;
-          font-size: 1rem;
-          border-radius: 0.25rem;
-          transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-        #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item .order-item-copy .copy .btn-link {
-          font-weight: 400;
-          color: #0d6efd;
-          text-decoration: underline;
-          background: none;
-          border: none;
-          font-size: 13px;
-          line-height: 15px;
-          box-shadow: none; }
-          #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item .order-item-copy .copy .btn-link i {
-            font-size: 16px;
-            color: #058fff; }
-      #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item p {
-        margin-bottom: 1rem; }
-      #user-panel .row .content .row .tab-content .card .card-header .custom-list-group .list-group-item .order-item-label-info {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 16px; }
+        #user-panel .row .content .row .tab-content .tab-pane .card .card-footer .list-group-horizontal .list-group-item:first-child {
+          border-right: 1px solid #d5d5d5; }
+  #user-panel .row .content .row .tab-content .tab-pane.active {
+    display: block; }
 
-#user-panel .row .content .row .tab-content .card .card-footer {
-  padding: 25px 20px;
-  background-color: #fff;
-  border-top: 1px solid #d5d5d5 !important;
-  border-radius: 0 0 8px 8px; }
-  #user-panel .row .content .row .tab-content .card .card-footer .list-group {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 0;
-    border: none; }
-  #user-panel .row .content .row .tab-content .card .card-footer .list-group-horizontal {
-    flex-direction: row; }
-    #user-panel .row .content .row .tab-content .card .card-footer .list-group-horizontal .list-group-item {
-      padding-top: 0;
-      padding: 20px;
-      height: auto;
-      padding-bottom: 30px;
-      flex-basis: 33%;
-      border: none; }
-      #user-panel .row .content .row .tab-content .card .card-footer .list-group-horizontal .list-group-item .order-item-label {
-        font-weight: bold;
+#main .main-container #user-panel .row .content .content-header .btn-submit {
+  display: flex;
+  background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 11px 38px; }
+
+#main .main-container #user-panel .row .content .content-header .c-sm {
+  font-size: 14px;
+  height: 40px; }
+
+#main .main-container #user-panel .row .content .card .card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 2rem; }
+  #main .main-container #user-panel .row .content .card .card-body .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto; }
+    #main .main-container #user-panel .row .content .card .card-body .table-responsive table {
+      display: table;
+      border-collapse: separate;
+      box-sizing: border-box;
+      text-indent: initial;
+      border-spacing: 2px;
+      border-color: grey;
+      border-collapse: collapse; }
+    #main .main-container #user-panel .row .content .card .card-body .table-responsive .table {
+      width: 100%;
+      margin-bottom: 0;
+      color: #212529; }
+      #main .main-container #user-panel .row .content .card .card-body .table-responsive .table thead {
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit; }
+        #main .main-container #user-panel .row .content .card .card-body .table-responsive .table thead tr {
+          display: table-row;
+          vertical-align: inherit;
+          border-color: inherit; }
+          #main .main-container #user-panel .row .content .card .card-body .table-responsive .table thead tr th {
+            display: table-cell;
+            vertical-align: bottom;
+            border-top: none;
+            border-bottom: 1px solid #e4e4e4;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 16px;
+            color: #373736;
+            padding: 10px 25px 20px 0;
+            text-align: start; }
+      #main .main-container #user-panel .row .content .card .card-body .table-responsive .table tbody tr td {
+        font-weight: 500;
         font-size: 13px;
         line-height: 16px;
-        margin-bottom: 10px; }
-      #user-panel .row .content .row .tab-content .card .card-footer .list-group-horizontal .list-group-item .order-item-value {
-        font-weight: 500;
-        font-size: 14.5px;
-        line-height: 16px;
-        color: rgba(55, 55, 54, 0.7);
-        margin-bottom: 0; }
-      #user-panel .row .content .row .tab-content .card .card-footer .list-group-horizontal .list-group-item:first-child {
-        border-right: 1px solid #d5d5d5; }
+        color: #000;
+        padding: 25px 0; }
+        #main .main-container #user-panel .row .content .card .card-body .table-responsive .table tbody tr td h4 {
+          font-size: 2.2rem;
+          line-height: 1.2;
+          letter-spacing: 1px; }
+        #main .main-container #user-panel .row .content .card .card-body .table-responsive .table tbody tr td .text-center {
+          text-align: center !important; }
