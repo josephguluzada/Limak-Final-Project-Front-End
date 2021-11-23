@@ -69,3 +69,23 @@ for (let i = 0; i < showBtn.length; i++) {
         })
     })
 }
+
+
+// Copy to Clipboard
+
+const copyText = Array.from(document.querySelectorAll("#copyText"));
+const copyBtn = Array.from(document.querySelectorAll(".copy"));
+
+
+for (let i = 0; i < copyBtn.length; i++) {
+    copyBtn[i].addEventListener("click", function () {
+        let target = this.getAttribute("data-target")
+        console.log(target);
+        copyText.forEach(el => {
+            if (target == el.getAttribute("data-id")) {
+                let text = el.textContent;
+                navigator.clipboard.writeText(text);
+            }
+        })
+    })
+}
