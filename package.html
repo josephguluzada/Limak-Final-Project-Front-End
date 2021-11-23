@@ -20,15 +20,19 @@
                         <span style="font-weight: 600;" id="userPanelBtn">Yusif Guluzada</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right" id="userPanelList">
-                        <li class="lang-dropdown"><a href="#" class="dropdown-item"><span>İstifadəçi paneli</span></a>
+                        <li class="lang-dropdown"><a href="user-panel.html" class="dropdown-item"><span>İstifadəçi
+                                    paneli</span></a>
                         </li>
                         <li class="lang-dropdown"><a href="#" class="dropdown-item"><span>Sifarişlər</span></a>
                         </li>
-                        <li class="lang-dropdown"><a href="#" class="dropdown-item"><span>Bəyan Gözləyən</span></a>
+                        <li class="lang-dropdown"><a href="report.html" class="dropdown-item"><span>Bəyan
+                                    Gözləyən</span></a>
                         </li>
-                        <li class="lang-dropdown"><a href="#" class="dropdown-item"><span>Bağlamalar</span></a>
+                        <li class="lang-dropdown"><a href="package.html"
+                                class="dropdown-item"><span>Bağlamalar</span></a>
                         </li>
-                        <li class="lang-dropdown"><a href="#" class="dropdown-item"><span>Xaricdəki Ünvanlar</span></a>
+                        <li class="lang-dropdown"><a href="adress.html" class="dropdown-item"><span>Xaricdəki
+                                    Ünvanlar</span></a>
                         </li>
                         <li class="lang-dropdown"><a href="#" class="dropdown-item"><span>Kuryer</span></a>
                         </li>
@@ -114,7 +118,7 @@
                                             </h3>
                                         </div>
                                         <div class="list-group-item user-nav-notf">
-                                            <a href="#">
+                                            <a href="notification.html">
                                                 <i class="fas fa-bell"></i>
                                                 <h3 class="user-nav-title">
                                                     Bildirişlər
@@ -162,7 +166,7 @@
                                             </a>
                                         </div>
                                         <div class="list-group-item aside-nav">
-                                            <a href="#">
+                                            <a href="adress.html">
                                                 <i class="fas fa-thumbtack"></i>
                                                 <h3 class="aside-nav-title">Xaricdəki ünvanlar</h3>
                                             </a>
@@ -327,7 +331,7 @@
                                     <div>
                                         <ul id="headerList" class="nav nav nav-tabs card-tabs-nav">
                                             <li class="nav-item">
-                                                <a href="#" class="nav-link active">
+                                                <a href="#" class="nav-link active" data-target="1">
                                                     <img src="./assets/images/tr-circle.svg" alt=""
                                                         class="card-tabs-nav-icon">
                                                     <span class="card-tabs-nav-title">
@@ -336,7 +340,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item card-tabs">
-                                                <a href="#" class="nav-link">
+                                                <a href="#" class="nav-link" data-target="2">
                                                     <img src="./assets/images/usa-circle.svg" alt=""
                                                         class="card-tabs-nav-icon">
                                                     <span class="card-tabs-nav-title">Amerika</span>
@@ -360,7 +364,7 @@
                                         </select>
                                     </form>
                                 </div>
-                                <div class="order-item order-item-package">
+                                <div data-id="1" class="order-item order-item-package active active-tab">
                                     <div class="card mb20">
                                         <div class="table-responsive">
                                             <table class="table order-table package-table">
@@ -519,6 +523,15 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-id="2" class="order-list tab-content card-tabs-body active-tab">
+                                    <div>
+                                        <div class="card order-item">
+                                            <div class="order-item-title">
+                                                <h6>Amerika: anbarında bəyan gözləyən bağlamanız yoxdur.</h6>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -37,7 +37,7 @@ document.addEventListener("mouseup", (e) => {
 // User Panel Content Header
 
 const flagBtn = document.querySelectorAll("#headerList .nav-item .nav-link");
-const tabPane = Array.from(document.querySelectorAll(".tab-content .tab-pane"));
+const tabPane = Array.from(document.querySelectorAll(".active-tab"));
 
 function removeActivesInFlag() {
     for (let i = 0; i < flagBtn.length; i++) {

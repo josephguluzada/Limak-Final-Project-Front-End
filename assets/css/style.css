@@ -9787,6 +9787,11 @@ header #userPanel-nav {
       color: #000;
       padding: 25px 20px; }
 
+#user-panel .row .content .active-tab {
+  display: none; }
+  #user-panel .row .content .active-tab.active {
+    display: block; }
+
 #user-panel .row .padding-0 {
   padding: 0 !important; }
 
@@ -9848,6 +9853,18 @@ header #userPanel-nav {
       padding: 2.4rem !important; }
       #user-panel .row .row .card-tabs-body .order-item .order-item-title h3 {
         font-size: 2.7rem;
+        font-weight: 500; }
+
+.card-tabs-body {
+  padding: 10px 0; }
+  .card-tabs-body .order-item {
+    margin-bottom: 20px; }
+    .card-tabs-body .order-item .order-item-title {
+      display: flex;
+      justify-content: space-around;
+      padding: 2.4rem !important; }
+      .card-tabs-body .order-item .order-item-title h6 {
+        font-size: 1.6rem;
         font-weight: 500; }
 
 #user-panel .row .aside .card {

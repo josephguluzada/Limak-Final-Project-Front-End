@@ -643,6 +643,13 @@
           }
         }
       }
+      .active-tab {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
     }
 
     .padding-0 {
@@ -725,6 +732,24 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+.card-tabs-body {
+  padding: 10px 0;
+
+  .order-item {
+    margin-bottom: 20px;
+    .order-item-title {
+      display: flex;
+      justify-content: space-around;
+      padding: 2.4rem !important;
+
+      h6 {
+        font-size: 1.6rem;
+        font-weight: 500;
       }
     }
   }
