@@ -105,11 +105,44 @@ for (let i = 0; i < copyBtn.length; i++) {
 }
 
 
+
+
+
+
+// Courier Page Input Check
+
+const checkLabel = document.querySelectorAll(".custom-control .custom-control-label");
+const checkInput = document.querySelectorAll(".custom-control .custom-control-input");
+
+function removeActivesInInput() {
+    for (let i = 0; i < checkLabel.length; i++) {
+        checkLabel[i].classList.remove("custom-radio-dot");
+    }
+}
+
+for (let i = 0; i < checkLabel.length; i++) {
+    checkLabel[i].addEventListener("click", function () {
+        let target = this.getAttribute("for");
+
+        checkInput.forEach(el => {
+            if (target == el.getAttribute("id")) {
+                if (el.checked = true) {
+                    removeActivesInInput();
+                    checkLabel[i].classList.toggle("custom-radio-dot");
+                }
+            }
+        })
+    })
+}
+
+
 // Visibility of User Panel Password
 
 const eyeBtn = document.getElementById("eyeBtn");
 const eyeIcon = document.querySelector("#eyeBtn i");
 const passwordInput = document.getElementById("currentPass");
+
+
 
 eyeBtn.addEventListener("click", function () {
     if (eyeIcon.classList.contains("fa-eye-slash")) {
