@@ -111,7 +111,7 @@ for (let i = 0; i < copyBtn.length; i++) {
 
 // Courier Page Input Check
 
-const checkLabel = document.querySelectorAll(".custom-control .custom-control-label");
+const checkLabel = document.querySelectorAll(".custom-control .ccl");
 const checkInput = document.querySelectorAll(".custom-control .custom-control-input");
 
 function removeActivesInInput() {
@@ -119,6 +119,8 @@ function removeActivesInInput() {
         checkLabel[i].classList.remove("custom-radio-dot");
     }
 }
+
+
 
 for (let i = 0; i < checkLabel.length; i++) {
     checkLabel[i].addEventListener("click", function () {
@@ -135,6 +137,31 @@ for (let i = 0; i < checkLabel.length; i++) {
     })
 }
 
+
+// Second Part
+const checkLabelTwo = document.querySelectorAll(".check-custom-block .ccl-2");
+const checkInputTwo = document.querySelectorAll(".check-custom-block .custom-control-input-2");
+
+function removeActivesInInputTwo() {
+    for (let i = 0; i < checkLabelTwo.length; i++) {
+        checkLabelTwo[i].classList.remove("custom-radio-dot-2");
+    }
+}
+
+for (let i = 0; i < checkLabelTwo.length; i++) {
+    checkLabelTwo[i].addEventListener("click", function () {
+        let target = this.getAttribute("for");
+
+        checkInputTwo.forEach(el => {
+            if (target == el.getAttribute("id")) {
+
+                removeActivesInInputTwo();
+                checkLabelTwo[i].classList.toggle("custom-radio-dot-2");
+
+            }
+        })
+    })
+}
 
 // Visibility of User Panel Password
 
