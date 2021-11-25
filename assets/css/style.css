@@ -10823,3 +10823,55 @@ header #userPanel-nav {
       width: auto;
       margin-bottom: 0;
       outline: none; }
+
+#user-panel .row .content .balance-orange .order-item-balance {
+  background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%); }
+  #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 25px 25px;
+    border: 1px solid #ffb19e;
+    border-radius: 8px;
+    min-height: 208px;
+    color: #fff; }
+    #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-header .balance-card-total .balance-card-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px; }
+      #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-header .balance-card-total .balance-card-total-price {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 6px; }
+      #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-header .balance-card-total sup {
+        font-size: 18px;
+        margin-left: 4px; }
+      #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-header .balance-card-date {
+        text-align: right; }
+        #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-header .balance-card-date p {
+          font-weight: 500;
+          font-size: 12.5px;
+          line-height: 15px;
+          margin-bottom: 4px; }
+        #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-header .balance-card-date strong {
+          font-weight: 500;
+          font-size: 12.5px;
+          line-height: 15px; }
+    #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-body .balance-card-text {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      margin-bottom: 12px; }
+    #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-body .balance-card-note {
+      font-weight: 600;
+      font-size: 12.5px;
+      line-height: 15px; }
+      #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-body .balance-card-note.upper {
+        text-transform: uppercase; }
