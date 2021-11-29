@@ -62,9 +62,10 @@ for (let i = 0; i < flagBtn.length; i++) {
         }
         removeActivesInTabPane();
         let target = this.getAttribute("data-target");
+        console.log(target);
         tabPane.forEach(el => {
             if (target == el.getAttribute("data-id")) {
-                el.classList.add("active")
+                el.classList.add("active");
             }
         })
     })

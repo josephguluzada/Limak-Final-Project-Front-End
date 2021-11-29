@@ -11267,7 +11267,8 @@ header #userPanel-nav {
           line-height: 17px;
           padding: 15px;
           color: #818181;
-          margin-top: 24px; }
+          margin-top: 24px;
+          outline: none; }
         .login-sec .modal-content .modal-body .modal-site .login .block .block-body .card-auth .row .card-auth-form .input-group {
           position: relative;
           display: flex;
@@ -11370,3 +11371,121 @@ header #userPanel-nav {
             border-top-right-radius: calc(0.25rem - 1px);
             border-bottom-right-radius: calc(0.25rem - 1px);
             border-bottom-left-radius: calc(0.25rem - 1px); }
+
+.shop .block .block-body .row .card-sidebar {
+  padding: 10px 0; }
+  .shop .block .block-body .row .card-sidebar .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+    flex-wrap: nowrap; }
+    .shop .block .block-body .row .card-sidebar .nav .nav-item .nav-link {
+      display: block;
+      margin: 0;
+      padding: 0 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 45px; }
+      .shop .block .block-body .row .card-sidebar .nav .nav-item .nav-link .nav-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 20px; }
+      .shop .block .block-body .row .card-sidebar .nav .nav-item .nav-link.active {
+        color: #f05835; }
+        .shop .block .block-body .row .card-sidebar .nav .nav-item .nav-link.active svg path {
+          fill: #f05835; }
+      .shop .block .block-body .row .card-sidebar .nav .nav-item .nav-link:hover {
+        color: #f05835; }
+        .shop .block .block-body .row .card-sidebar .nav .nav-item .nav-link:hover svg path {
+          fill: #f05835; }
+  .shop .block .block-body .row .card-sidebar .flex-column {
+    flex-direction: column !important; }
+
+.shop .block .block-body .row .nav {
+  display: flex; }
+
+.shop .block .block-body .row .card-tabs-nav {
+  background-color: #fff;
+  padding: 0 18px;
+  border-radius: 8px;
+  overflow: auto;
+  flex-wrap: nowrap; }
+
+.shop .block .block-body .row .nav-tabs {
+  border-bottom: 1px solid #dee2e6; }
+  .shop .block .block-body .row .nav-tabs .nav-item {
+    width: 33%; }
+    .shop .block .block-body .row .nav-tabs .nav-item .nav-link {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 44px 0 0;
+      padding: 18px 0;
+      border: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%; }
+      .shop .block .block-body .row .nav-tabs .nav-item .nav-link .card-tabs-nav-icon {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        margin-right: 10px; }
+      .shop .block .block-body .row .nav-tabs .nav-item .nav-link img {
+        max-width: 100%; }
+      .shop .block .block-body .row .nav-tabs .nav-item .nav-link.active {
+        color: #495057;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff; }
+      .shop .block .block-body .row .nav-tabs .nav-item .nav-link.active::after {
+        content: "";
+        width: 100%;
+        height: 3.2px;
+        background-color: #f05835;
+        border-radius: 8px 8px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+
+.shop .block .block-body .row .card-tabs-body {
+  padding: 10px 0; }
+  .shop .block .block-body .row .card-tabs-body .order-item {
+    margin-bottom: 20px; }
+    .shop .block .block-body .row .card-tabs-body .order-item .order-item-title {
+      display: flex;
+      justify-content: space-around;
+      padding: 2.4rem !important; }
+      .shop .block .block-body .row .card-tabs-body .order-item .order-item-title h3 {
+        font-size: 2.7rem;
+        font-weight: 500; }
+
+.shop .block .block-body .row .store-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .shop .block .block-body .row .store-list .row .item-box.hide {
+    display: none; }
+  .shop .block .block-body .row .store-list .row .store-item .card {
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 156px;
+    box-shadow: none;
+    padding: 55px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .shop .block .block-body .row .store-list .row .store-item .card img {
+      max-width: 100%;
+      width: auto; }
+
+.active {
+  color: #f05835; }
+  .active svg path {
+    fill: #f05835; }
