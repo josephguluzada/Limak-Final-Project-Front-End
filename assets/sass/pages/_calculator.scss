@@ -461,11 +461,8 @@
                         }
                         .dropdown-menu {
                           position: absolute;
-                          top: 100%;
-                          left: 0;
                           z-index: 1000;
                           display: none;
-                          //   display: block;
                           float: left;
                           min-width: 10rem;
                           padding: 0.5rem 0;
@@ -480,25 +477,35 @@
                           border-radius: 0.25rem;
                           border: none;
                           left: 0 !important;
-                          top: 10px !important;
-                          min-width: 90px;
-                          padding: 4px 0;
-                          border-radius: 8px;
+                          top: 39px !important;
+                          min-width: 72px;
+                          padding: 4px 4px;
+                          border-radius: 18px;
 
-                          .dropdown-item {
+                          li {
+                            .dropdown-item {
+                              display: block;
+                              width: 100%;
+                              padding: 0.25rem 1.5rem;
+                              clear: both;
+                              font-weight: 400;
+                              color: #212529;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              padding: 8px 14px;
+                              display: flex;
+                              align-items: center;
+                              font-size: 14px;
+                            }
+                            &:hover {
+                              background-color: #e9ecef;
+                            }
+                          }
+
+                          &.active {
                             display: block;
-                            width: 100%;
-                            padding: 0.25rem 1.5rem;
-                            clear: both;
-                            font-weight: 400;
-                            color: #212529;
-                            text-align: inherit;
-                            white-space: nowrap;
-                            background-color: transparent;
-                            border: 0;
-                            padding: 8px 14px;
-                            display: flex;
-                            align-items: center;
                           }
                         }
                       }
